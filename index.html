@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="" method="post" id="registrationForm">
+                            <div class="form-group">
+                                <label class="col-sm-2" for="firstName">FirstName</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="first_name" id="firstName" class="form-control" placeholder="Input Ur first Name"/>
+                                </div>
+                                <span id="firstNameError" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="col-sm-2">LastName</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="last_name" id="lastName" class="form-control" placeholder="Input Your Last Name"/>
+                                </div>
+                                <span id="lastNameError" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailAddress" class="col-sm-2">Email</label>
+                                <div class="col-sm-4">
+                                    <input type="email" name="email" id="emailAddress" class="form-control" placeholder="fsmoon84@gmail.com"/>
+                                </div>
+                                <span id="emailError" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-sm-2">Password</label>
+                                <div class="col-sm-4">
+                                    <input type="password" id="password" name="password" class="form-control" placeholder="passpword"/>
+                                    <input type="text" id="passwordDisplay" name="password" class="form-control" placeholder="showPassword"/>
+                                    <input type="checkbox" id="showPassword" name="show_password">Show Password
+                                </div>
+                                <span id="passwordError" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-sm-2">ConfirmPassword</label>
+                                <div class="col-sm-4">
+                                    <input type="password" id="confirmPassword" name="confirm_password" class="form-control" placeholder="passpword"/>
+                                </div>
+                                <span id="confirmPasswordError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="">District Name</label>
+                                <select name="district_name" id="districtName">
+                                    <option value="">Select District Name</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Chattagram">Chattagram</option>
+                                    <option value="Khulna">Khulna</option>
+                                    <option value="Rajshahi">Rajshahi</option>
+                                    <option value="Syhlet">Syhlet</option>
+                                    <option value="Barishal">Barishal</option>
+                                    <option value="Dinajpur">Dinajpur</option>
+                                </select>
+                                <span id="districtError"></span>
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn btn-outline-warning">
+                                    <label for="forgetPassword"><a href=""  class="text-primary" style="text-decoration: none;" id="forgetPassword"><strong>Forget Passoword</strong></a></label>
+                                </button>
+                            </div>
+                            <div class="">
+                                <input type="submit" name="btn" id="submitBtn" class="btn btn-outline-dark btn-block" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/java-script.js"></script>
+    </body>
+</html>
